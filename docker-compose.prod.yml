@@ -78,3 +78,5 @@ services:
                     memory: 1024M
             restart_policy:
                 condition: on-failure
+        volumes:
+            - ./boca-docker/init:/docker-entrypoint-initdb.d
